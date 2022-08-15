@@ -1,0 +1,27 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: home-inspire
+  labels:
+    name: home-inspire
+    app: homeinspire
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: home-inspire
+      app: homeinspire
+  template:
+    metadata:
+      name: home-inspire
+      labels:
+        name: home-inspire
+        app: homeinspire
+    spec:
+      containers:
+      - name: app
+        image: favouritagar/home-inspire:latest
+        ports:
+        - containerPort: 80
+

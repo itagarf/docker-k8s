@@ -1,0 +1,3 @@
+[submodule "docker-python"]
+	path = docker-python
+	url = https://github.com/itagarf/HTML-and-Python.git
