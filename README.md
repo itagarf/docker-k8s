@@ -15,5 +15,5 @@ home-inspire   NodePort    10.110.225.138   <none>        80:30003/TCP   16d
 NAME                              READY   STATUS    RESTARTS      AGE
 home-inspire-6bf848cfb7-cmfsk     1/1     Running   1 (56s ago)   16d
 
-% k run service home-inspire #or k port-forward services/home-inspire 8080:80
+% minikube service home-inspire #or k port-forward services/home-inspire 8080:80
 ```
